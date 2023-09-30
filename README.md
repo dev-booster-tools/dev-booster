@@ -1,0 +1,1 @@
+### JWT Authentication Simplifier for REST APIs
