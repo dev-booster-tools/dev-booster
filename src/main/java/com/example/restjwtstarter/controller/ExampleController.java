@@ -12,6 +12,11 @@ public class ExampleController {
     private static final String USER_PATH = "user";
     private static final String ADMIN_PATH = "admin";
 
+    @GetMapping
+    public String helloRoot() {
+        return "Hello Root";
+    }
+
     @GetMapping(USER_PATH)
     public String helloUser() {
         return "Hello User";
