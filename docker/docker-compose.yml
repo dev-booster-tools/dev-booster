@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: rest-jwm-db
+    image: postgres:15.3
+    restart: on-failure
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pass
+    volumes:
+      - ./db-init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - '7432:5432'

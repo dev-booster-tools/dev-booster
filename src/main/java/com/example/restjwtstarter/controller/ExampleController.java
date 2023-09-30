@@ -1,5 +1,7 @@
 package com.example.restjwtstarter.controller;
 
+import com.example.restjwtstarter.security.UserPrincipal;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,8 +20,8 @@ public class ExampleController {
     }
 
     @GetMapping(USER_PATH)
-    public String helloUser() {
-        return "Hello User";
+    public String helloUser(@AuthenticationPrincipal UserPrincipal principal) {
+        return "Hello User: " + principal.getEmail() + " User ID: " + principal.getUserId();
     }
 
     @GetMapping(ADMIN_PATH)
