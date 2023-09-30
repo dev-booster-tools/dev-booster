@@ -1,8 +1,8 @@
-package com.example.restjwtstarter.controller;
+package com.ytty.restjwtstarter.controller;
 
-import com.example.restjwtstarter.model.LoginRequest;
-import com.example.restjwtstarter.model.LoginResponse;
-import com.example.restjwtstarter.service.AuthService;
+import com.ytty.restjwtstarter.model.LoginRequest;
+import com.ytty.restjwtstarter.model.LoginResponse;
+import com.ytty.restjwtstarter.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;

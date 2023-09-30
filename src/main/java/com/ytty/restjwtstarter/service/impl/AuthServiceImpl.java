@@ -1,8 +1,9 @@
-package com.example.restjwtstarter.service;
+package com.ytty.restjwtstarter.service.impl;
 
-import com.example.restjwtstarter.model.LoginResponse;
-import com.example.restjwtstarter.security.JwtIssuer;
-import com.example.restjwtstarter.security.UserPrincipal;
+import com.ytty.restjwtstarter.model.LoginResponse;
+import com.ytty.restjwtstarter.security.JwtIssuer;
+import com.ytty.restjwtstarter.security.UserPrincipal;
+import com.ytty.restjwtstarter.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -15,7 +16,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class AuthService {
+public class AuthServiceImpl implements AuthService {
 
     private final JwtIssuer jwtIssuer;
     private final AuthenticationManager authenticationManager;

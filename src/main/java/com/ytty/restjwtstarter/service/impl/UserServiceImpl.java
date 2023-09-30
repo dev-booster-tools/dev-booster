@@ -1,7 +1,8 @@
-package com.example.restjwtstarter.service;
+package com.ytty.restjwtstarter.service.impl;
 
-import com.example.restjwtstarter.model.UserEntity;
-import com.example.restjwtstarter.repository.UserRepo;
+import com.ytty.restjwtstarter.model.UserEntity;
+import com.ytty.restjwtstarter.repository.UserRepo;
+import com.ytty.restjwtstarter.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class UserService {
+public class UserServiceImpl implements UserService {
 
     private final UserRepo userRepo;
 

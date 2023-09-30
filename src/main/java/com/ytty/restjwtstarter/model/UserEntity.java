@@ -1,4 +1,4 @@
-package com.example.restjwtstarter.model;
+package com.ytty.restjwtstarter.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;

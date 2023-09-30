@@ -1,8 +1,8 @@
-package com.example.restjwtstarter.security;
+package com.ytty.restjwtstarter.security;
 
-import com.example.restjwtstarter.mapper.UserDetailsMapper;
-import com.example.restjwtstarter.model.UserEntity;
-import com.example.restjwtstarter.service.UserService;
+import com.ytty.restjwtstarter.mapper.UserDetailsMapper;
+import com.ytty.restjwtstarter.model.UserEntity;
+import com.ytty.restjwtstarter.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

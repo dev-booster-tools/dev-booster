@@ -1,7 +1,7 @@
-package com.example.restjwtstarter.mapper;
+package com.ytty.restjwtstarter.mapper;
 
-import com.example.restjwtstarter.model.UserEntity;
-import com.example.restjwtstarter.security.UserPrincipal;
+import com.ytty.restjwtstarter.model.UserEntity;
+import com.ytty.restjwtstarter.security.UserPrincipal;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;

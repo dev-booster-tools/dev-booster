@@ -1,6 +1,6 @@
-package com.example.restjwtstarter.repository;
+package com.ytty.restjwtstarter.repository;
 
-import com.example.restjwtstarter.model.UserEntity;
+import com.ytty.restjwtstarter.model.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

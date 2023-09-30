@@ -1,4 +1,4 @@
-package com.example.restjwtstarter.security;
+package com.ytty.restjwtstarter.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;

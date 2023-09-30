@@ -1,4 +1,4 @@
-package com.example.restjwtstarter.security;
+package com.ytty.restjwtstarter.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

@@ -1,6 +1,6 @@
-package com.example.restjwtstarter.controller;
+package com.ytty.restjwtstarter.controller;
 
-import com.example.restjwtstarter.security.UserPrincipal;
+import com.ytty.restjwtstarter.security.UserPrincipal;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

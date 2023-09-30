@@ -1,4 +1,4 @@
-package com.example.restjwtstarter.security;
+package com.ytty.restjwtstarter.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

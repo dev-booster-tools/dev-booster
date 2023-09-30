@@ -1,4 +1,4 @@
-package com.example.restjwtstarter.security;
+package com.ytty.restjwtstarter.security;
 
 import jakarta.annotation.Nonnull;
 import jakarta.servlet.FilterChain;
