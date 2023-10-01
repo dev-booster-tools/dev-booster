@@ -36,6 +36,8 @@ public class AuthServiceImpl implements AuthService {
         String token = jwtIssuer.issue(principal.getUserId(), principal.getEmail(), roles);
         return LoginResponse.builder()
                 .accessToken(token)
+                .userId(principal.getUserId())
+                .roles(roles)
                 .build();
     }
 }
