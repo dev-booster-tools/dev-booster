@@ -8,11 +8,11 @@
         <version>3.1.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>rest-jwt-starter</artifactId>
+    <groupId>com.ytty.raja</groupId>
+    <artifactId>rest-jwt-auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest-jwt-starter</name>
-    <description>rest-jwt-starter</description>
+    <name>rest-jwt-auth</name>
+    <description>rest-jwt-auth</description>
     <properties>
         <java.version>17</java.version>
         <java-jwt.version>4.3.0</java-jwt.version>
