@@ -1,6 +1,7 @@
 package com.ytty.raja.core;
 
 import com.ytty.raja.api.model.User;
+import com.ytty.raja.api.model.UserPrincipal;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;

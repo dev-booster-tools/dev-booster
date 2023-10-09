@@ -1,4 +1,4 @@
-package com.ytty.raja.core;
+package com.ytty.raja.api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
@@ -10,7 +10,7 @@ import java.util.Collection;
 
 @Getter
 @Builder
-class UserPrincipal implements UserDetails {
+public class UserPrincipal implements UserDetails {
 
     private final Long userId;
     private final String email;

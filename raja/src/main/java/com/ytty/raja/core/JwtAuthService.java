@@ -1,5 +1,6 @@
 package com.ytty.raja.core;
 
+import com.ytty.raja.api.model.UserPrincipal;
 import com.ytty.raja.api.service.AuthService;
 import com.ytty.raja.api.dto.LoginResponseDto;
 import lombok.RequiredArgsConstructor;
