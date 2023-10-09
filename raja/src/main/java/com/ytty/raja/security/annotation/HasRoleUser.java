@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@PreAuthorize("hasRole(T(com.ytty.raja.model.UserEntity$Role).USER.name())")
+@PreAuthorize("hasAuthority(T(com.ytty.raja.model.UserEntity$Role).USER.name())")
 public @interface HasRoleUser {
 }

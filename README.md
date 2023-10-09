@@ -1,1 +1,1 @@
-### RAJA - JWT Authentication Simplifier for REST APIs
+### RAJA development project
