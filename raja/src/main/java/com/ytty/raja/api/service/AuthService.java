@@ -1,6 +1,6 @@
-package com.ytty.raja.service;
+package com.ytty.raja.api.service;
 
-import com.ytty.raja.dto.LoginResponseDto;
+import com.ytty.raja.api.dto.LoginResponseDto;
 
 public interface AuthService {
     LoginResponseDto attemptLogin(String email, String password);

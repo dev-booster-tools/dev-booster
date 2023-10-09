@@ -1,7 +1,6 @@
-package com.ytty.raja.mapper;
+package com.ytty.raja.core;
 
-import com.ytty.raja.model.User;
-import com.ytty.raja.security.UserPrincipal;
+import com.ytty.raja.api.model.User;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class UserDetailsMapper {
+class UserDetailsMapper {
 
     public UserDetails map(User userEntity) {
         return UserPrincipal.builder()

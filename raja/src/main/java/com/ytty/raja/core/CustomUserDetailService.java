@@ -1,8 +1,7 @@
-package com.ytty.raja.security;
+package com.ytty.raja.core;
 
-import com.ytty.raja.mapper.UserDetailsMapper;
-import com.ytty.raja.model.User;
-import com.ytty.raja.service.UserService;
+import com.ytty.raja.api.model.User;
+import com.ytty.raja.api.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -11,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class CustomUserDetailService implements UserDetailsService {
+class CustomUserDetailService implements UserDetailsService {
 
     private final UserService userService;
     private final UserDetailsMapper mapper;

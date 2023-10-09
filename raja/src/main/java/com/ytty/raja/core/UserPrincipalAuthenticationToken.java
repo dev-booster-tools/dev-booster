@@ -1,8 +1,8 @@
-package com.ytty.raja.security;
+package com.ytty.raja.core;
 
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 
-public class UserPrincipalAuthenticationToken extends AbstractAuthenticationToken {
+class UserPrincipalAuthenticationToken extends AbstractAuthenticationToken {
 
     private final UserPrincipal principal;
 

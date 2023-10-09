@@ -1,4 +1,4 @@
-package com.ytty.raja.security;
+package com.ytty.raja.core;
 
 import jakarta.annotation.Nonnull;
 import jakarta.servlet.FilterChain;
@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
-public class JwtAuthenticationFilter extends OncePerRequestFilter {
+class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtDecoder jwtDecoder;
     private final JwtToPrincipalConverter jwtToPrincipalConverter;

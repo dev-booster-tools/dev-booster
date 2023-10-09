@@ -1,4 +1,4 @@
-package com.ytty.raja.security.annotation;
+package com.ytty.raja.api.annotation;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@PreAuthorize("hasAuthority(T(com.ytty.raja.model.Role).USER.name())")
+@PreAuthorize("hasAuthority(T(com.ytty.raja.api.model.Role).USER.name())")
 public @interface HasRoleUser {
 }

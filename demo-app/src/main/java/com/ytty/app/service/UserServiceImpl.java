@@ -1,8 +1,8 @@
 package com.ytty.app.service;
 
-import com.ytty.raja.model.User;
-import com.ytty.raja.repository.UserRepo;
-import com.ytty.raja.service.UserService;
+import com.ytty.raja.api.model.User;
+import com.ytty.raja.api.repository.UserRepo;
+import com.ytty.raja.api.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

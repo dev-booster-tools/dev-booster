@@ -1,8 +1,8 @@
 package com.ytty.app.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.ytty.raja.model.Role;
-import com.ytty.raja.model.User;
+import com.ytty.raja.api.model.Role;
+import com.ytty.raja.api.model.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

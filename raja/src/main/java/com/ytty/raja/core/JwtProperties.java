@@ -1,4 +1,4 @@
-package com.ytty.raja.security;
+package com.ytty.raja.core;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Setter
 @Configuration
 @ConfigurationProperties("security.jwt")
-public class JwtProperties {
+class JwtProperties {
 
     /**
      * Secret key for JWT

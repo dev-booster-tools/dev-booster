@@ -1,8 +1,8 @@
 package com.ytty.app.controller;
 
-import com.ytty.raja.dto.LoginRequestDto;
-import com.ytty.raja.dto.LoginResponseDto;
-import com.ytty.raja.service.AuthService;
+import com.ytty.raja.api.dto.LoginRequestDto;
+import com.ytty.raja.api.dto.LoginResponseDto;
+import com.ytty.raja.api.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;

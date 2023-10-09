@@ -1,6 +1,6 @@
-package com.ytty.raja.repository;
+package com.ytty.raja.api.repository;
 
-import com.ytty.raja.model.User;
+import com.ytty.raja.api.model.User;
 
 import java.util.Optional;
 

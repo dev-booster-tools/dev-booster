@@ -1,8 +1,5 @@
-package com.ytty.raja.config;
+package com.ytty.raja.core;
 
-import com.ytty.raja.repository.UserRepo;
-import com.ytty.raja.security.JwtAuthenticationFilter;
-import com.ytty.raja.security.UnauthorizedHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +21,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 @EnableWebSecurity
 @EnableMethodSecurity(securedEnabled = true, jsr250Enabled = true)
 @RequiredArgsConstructor
-public class SecurityConfig {
+class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final UnauthorizedHandler unauthorizedHandler;

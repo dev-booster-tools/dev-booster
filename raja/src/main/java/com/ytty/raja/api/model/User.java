@@ -1,4 +1,4 @@
-package com.ytty.raja.model;
+package com.ytty.raja.api.model;
 
 public interface User {
 

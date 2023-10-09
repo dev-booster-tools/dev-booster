@@ -1,4 +1,4 @@
-package com.ytty.raja.dto;
+package com.ytty.raja.api.dto;
 
 import lombok.Builder;
 import lombok.Getter;

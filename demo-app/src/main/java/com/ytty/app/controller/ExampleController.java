@@ -1,7 +1,7 @@
 package com.ytty.app.controller;
 
-import com.ytty.raja.security.annotation.HasRoleAdmin;
-import com.ytty.raja.security.annotation.HasRoleUser;
+import com.ytty.raja.api.annotation.HasRoleAdmin;
+import com.ytty.raja.api.annotation.HasRoleUser;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

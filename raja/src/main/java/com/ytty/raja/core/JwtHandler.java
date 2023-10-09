@@ -1,7 +1,8 @@
-package com.ytty.raja.security;
+package com.ytty.raja.core;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -12,10 +13,19 @@ import java.util.List;
 
 @Component
 @RequiredArgsConstructor
-public class JwtIssuer {
+class JwtHandler implements JwtDecoder, JwtIssuer {
 
     private final JwtProperties properties;
 
+    @Override
+    public DecodedJWT decode(String token) {
+        return JWT.require(Algorithm.HMAC256(properties.getSecretKey()))
+                .build()
+                .verify(token);
+    }
+
+
+    @Override
     public String issue(long userId, String email, List<String> roles) {
         return JWT.create()
                 .withSubject(String.valueOf(userId))

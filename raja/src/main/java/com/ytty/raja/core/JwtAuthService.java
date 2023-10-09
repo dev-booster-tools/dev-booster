@@ -1,8 +1,7 @@
-package com.ytty.raja.service;
+package com.ytty.raja.core;
 
-import com.ytty.raja.dto.LoginResponseDto;
-import com.ytty.raja.security.JwtIssuer;
-import com.ytty.raja.security.UserPrincipal;
+import com.ytty.raja.api.service.AuthService;
+import com.ytty.raja.api.dto.LoginResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -15,7 +14,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class JwtAuthService implements AuthService {
+class JwtAuthService implements AuthService {
 
     private final JwtIssuer jwtIssuer;
     private final AuthenticationManager authenticationManager;

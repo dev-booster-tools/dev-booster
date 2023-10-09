@@ -1,4 +1,4 @@
-package com.ytty.raja.security;
+package com.ytty.raja.core;
 
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class JwtToPrincipalConverter {
+class JwtToPrincipalConverter {
 
     public UserPrincipal convert(DecodedJWT jwt) {
         return UserPrincipal.builder()
