@@ -1,4 +1,4 @@
-package com.ytty.raja.controller;
+package com.ytty.app.controller;
 
 import com.ytty.raja.dto.LoginRequestDto;
 import com.ytty.raja.dto.LoginResponseDto;

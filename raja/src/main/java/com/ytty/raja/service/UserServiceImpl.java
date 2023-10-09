@@ -1,4 +1,4 @@
-package com.ytty.raja.service.impl;
+package com.ytty.raja.service;
 
 import com.ytty.raja.model.UserEntity;
 import com.ytty.raja.repository.UserRepo;

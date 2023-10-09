@@ -1,5 +1,6 @@
-package com.ytty.raja.security.config;
+package com.ytty.raja.config;
 
+import com.ytty.raja.repository.UserRepo;
 import com.ytty.raja.security.JwtAuthenticationFilter;
 import com.ytty.raja.security.UnauthorizedHandler;
 import lombok.RequiredArgsConstructor;
@@ -61,7 +62,5 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
-
-
 }
 

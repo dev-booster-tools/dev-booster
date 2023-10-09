@@ -1,4 +1,4 @@
-package com.ytty.raja.service.impl;
+package com.ytty.raja.service;
 
 import com.ytty.raja.dto.LoginResponseDto;
 import com.ytty.raja.security.JwtIssuer;
@@ -16,7 +16,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class AuthServiceImpl implements AuthService {
+public class DefaultAuthService implements AuthService {
 
     private final JwtIssuer jwtIssuer;
     private final AuthenticationManager authenticationManager;
