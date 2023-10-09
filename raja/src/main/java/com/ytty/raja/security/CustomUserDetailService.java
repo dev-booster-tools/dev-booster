@@ -1,7 +1,7 @@
 package com.ytty.raja.security;
 
 import com.ytty.raja.mapper.UserDetailsMapper;
-import com.ytty.raja.model.UserEntity;
+import com.ytty.raja.model.User;
 import com.ytty.raja.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,7 +18,7 @@ public class CustomUserDetailService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UserEntity user = userService.findByEmail(username)
+        User user = userService.findByEmail(username)
                 .orElseThrow(() -> new UsernameNotFoundException(String.format("User %s not found", username)));
 
         return mapper.map(user);

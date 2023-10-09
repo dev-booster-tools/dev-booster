@@ -1,6 +1,6 @@
 package com.ytty.raja.mapper;
 
-import com.ytty.raja.model.UserEntity;
+import com.ytty.raja.model.User;
 import com.ytty.raja.security.UserPrincipal;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,7 +11,7 @@ import java.util.List;
 @Component
 public class UserDetailsMapper {
 
-    public UserDetails map(UserEntity userEntity) {
+    public UserDetails map(User userEntity) {
         return UserPrincipal.builder()
                 .userId(userEntity.getId())
                 .email(userEntity.getEmail())

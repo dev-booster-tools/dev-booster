@@ -1,6 +1,6 @@
-package com.ytty.raja.service;
+package com.ytty.app.service;
 
-import com.ytty.raja.model.UserEntity;
+import com.ytty.raja.model.User;
 import com.ytty.raja.repository.UserRepo;
 import com.ytty.raja.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +14,8 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepo userRepo;
 
-    public Optional<UserEntity> findByEmail(String email) {
+    @Override
+    public Optional<User> findByEmail(String email) {
         return userRepo.findByEmail(email);
     }
 }

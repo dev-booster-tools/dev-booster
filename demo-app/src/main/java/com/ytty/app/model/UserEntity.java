@@ -1,6 +1,8 @@
-package com.ytty.raja.model;
+package com.ytty.app.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.ytty.raja.model.Role;
+import com.ytty.raja.model.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -16,7 +18,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "users")
-public class UserEntity {
+public class UserEntity implements User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,8 +36,4 @@ public class UserEntity {
 
     @Column(nullable = false)
     private boolean enabled;
-
-    public enum Role {
-        USER, ADMIN
-    }
 }
