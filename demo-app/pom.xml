@@ -40,9 +40,9 @@
             <version>${postgres.driver.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.ytty.raja</groupId>
+            <groupId>io.github.yurtitov</groupId>
             <artifactId>raja</artifactId>
-            <version>${raja.version}</version>
+            <version>0.1.0</version>
         </dependency>
     </dependencies>
 
