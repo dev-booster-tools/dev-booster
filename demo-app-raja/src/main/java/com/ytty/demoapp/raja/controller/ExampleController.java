@@ -1,4 +1,4 @@
-package com.ytty.app.controller;
+package com.ytty.demoapp.raja.controller;
 
 import com.ytty.raja.api.annotation.HasRoleAdmin;
 import com.ytty.raja.api.annotation.HasRoleUser;

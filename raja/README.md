@@ -1,1 +1,1 @@
-### RAJA - Rest API JWT authorization
+### RAJA is a library for Rest API JWT authorization

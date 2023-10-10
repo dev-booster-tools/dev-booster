@@ -1,4 +1,4 @@
-package com.ytty.app;
+package com.ytty.demoapp.raja;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
