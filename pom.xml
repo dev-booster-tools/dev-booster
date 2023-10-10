@@ -11,7 +11,8 @@
 
     <modules>
         <module>raja</module>
-        <module>demo-app</module>
+        <module>responder</module>
+        <module>demo-app-raja</module>
     </modules>
 
 </project>

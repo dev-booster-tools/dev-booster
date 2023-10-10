@@ -10,11 +10,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.ytty.application</groupId>
-    <artifactId>demo-app</artifactId>
+    <groupId>com.ytty.demoapp.raja</groupId>
+    <artifactId>demo-app-raja</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-all</name>
-    <description>Demo application</description>
+    <name>demo-app-raja</name>
+    <description>Demo app for RAJA lib</description>
 
     <properties>
         <java.version>17</java.version>
@@ -40,7 +40,7 @@
             <version>${postgres.driver.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.github.yurtitov</groupId>
+            <groupId>io.github.dev-booster-tools</groupId>
             <artifactId>raja</artifactId>
             <version>${raja.version}</version>
         </dependency>

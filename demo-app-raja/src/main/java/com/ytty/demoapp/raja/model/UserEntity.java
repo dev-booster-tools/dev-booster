@@ -1,4 +1,4 @@
-package com.ytty.app.model;
+package com.ytty.demoapp.raja.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ytty.raja.api.model.Role;
